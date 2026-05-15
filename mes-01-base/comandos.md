@@ -1,3 +1,5 @@
+
+
 # Comandos aprendidos — Mês 1
 
 ## Navegação
@@ -24,3 +26,18 @@
 | `sudo journalctl -n 30` | Últimos 30 eventos do sistema |
 | `sudo journalctl -u ssh` | Logs apenas do SSH |
 | `tail -f /var/log/syslog` | Logs em tempo real |
+
+
+## Permissões
+| Comando | O que faz |
+|---|---|
+| `chmod 600 arquivo` | Só o dono lê e escreve |
+| `chmod 644 arquivo` | Dono lê/escreve, outros só lêem |
+| `chmod 755 arquivo` | Dono tudo, outros lêem/executam |
+| `ls -lah` | Mostra permissões dos arquivos |
+
+## Tabela rwx
+- r = leitura (4)
+- w = escrita (2)  
+- x = execução (1)
+- 755 = dono(7=4+2+1) grupo(5=4+1) outros(5=4+1)
